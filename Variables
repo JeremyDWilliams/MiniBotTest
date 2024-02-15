@@ -1,0 +1,41 @@
+ Here's a list of variables in the code along with their expected ranges:
+
+Servo Positions:
+
+homePosition: The home position for the servos. Expected range: 0 to 180 (degrees).
+Button Pins:
+
+playButtonPin: Pin for the play button. Expected range: Any valid digital pin number.
+recordButtonPin: Pin for the record button. Expected range: Any valid digital pin number.
+pauseEndButtonPin: Pin for the pause/end button. Expected range: Any valid digital pin number.
+LED Pins:
+
+redLedPin: Pin for the red LED. Expected range: Any valid digital pin number.
+greenLedPin: Pin for the green LED. Expected range: Any valid digital pin number.
+Servo and Potentiometer Pins:
+
+servoPins[]: Array of pins for the servos. Expected range: Any valid digital pin numbers.
+potPins[]: Array of pins for the potentiometers. Expected range: Any valid analog pin numbers.
+Button Press Timing:
+
+lastButtonPressTime: Timestamp of the last button press. Expected range: Unsigned long.
+buttonPressCount: Count of consecutive button presses. Expected range: Integer.
+PID Constants:
+
+Kp: Proportional gain. Expected range: Floating-point number.
+Ki: Integral gain. Expected range: Floating-point number.
+Kd: Derivative gain. Expected range: Floating-point number.
+File Handling:
+
+movementsFile: File object for recording/playback. Expected range: N/A.
+movementCounter: Counter for tracking movement files. Expected range: Integer.
+State Variables:
+
+recording: Boolean indicating recording state. Expected range: Boolean (true/false).
+playing: Boolean indicating playback state. Expected range: Boolean (true/false).
+paused: Boolean indicating pause state. Expected range: Boolean (true/false).
+Servo Positions and Errors:
+
+previousError[]: Array of previous errors for PID control. Expected range: Integer.
+integral[]: Array of integral terms for PID control. Expected range: Integer.
+These variables are used throughout the code for controlling servos, handling button presses, managing file operations, implementing PID control, and tracking system states. Adjustments to these variables may be necessary based on specific hardware configurations and project requirements
